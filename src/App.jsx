@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import {Link} from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Location from './Components/Location'
 import Header from './Components/Header'
+import Footer from './Components/Footer'
 import { locations } from './data'
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
     <div>
       <Header />
       {destinations}
+      <Footer />
     </div>
   )
 }
