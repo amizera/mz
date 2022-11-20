@@ -1,0 +1,29 @@
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import './App.css'
+import Location from './Components/Location'
+import Header from './Components/Header'
+import { locations } from './data'
+
+function App() {
+  const [count, setCount] = useState(0)
+  
+  const destinations = locations.map(item => {
+    return (
+      <Location 
+        key={item.id}
+        locationTitle={item.name}
+        locationAddress={item.street}
+        locationImage={item.coverImg}/>
+    )
+  })
+
+  return (
+    <div>
+      <Header />
+      {destinations}
+    </div>
+  )
+}
+
+export default App

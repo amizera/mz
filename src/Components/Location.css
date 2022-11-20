@@ -1,0 +1,33 @@
+.location-card {
+  width: 327px;
+  height: 310px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: none;
+  margin: 10px auto 20px auto;
+}
+
+.location-image {
+  border-radius: 15px 15px 0 0;
+  border: none;
+  margin: 0;
+  height: 250px;
+  object-fit: cover;
+}
+
+.location-title {
+  border-radius: 0 0 15px 15px;
+  border: none;
+  background-color:  #EAECF0;
+  margin: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  
+  font-weight: 400;
+  font-size: 22px;
+  font-style: italic;
+}
