@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import {Link} from 'react-router-dom'
+,
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Location from './Components/Location'
